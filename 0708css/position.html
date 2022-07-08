@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="height:1500px ;">
+    <!--position-->
+    <div style="position:fixed ;top:20px; width:80px; height:80px; background-color:red;"></div>
+    <div style=" width:120px; height:120px; background-color:rgb(76, 0, 255);"></div>
+    <br>
+    <div style="position:relative ;top:50px; left:50px; width:80px; height:80px; background-color:red;"></div>
+    <div style=" width:120px; height:120px; background-color:rgb(76, 0, 255);"></div>
+    <!--relative相對於原本位置的偏移，原本的位置會空出來，不適合用在大範圍排版，適合用在有目標的相對位置EX：平方根-->
+    <br>
+    <div style="padding: 30px;; border:5px solid red;">
+        <div style="padding:30px; border:5px solid red;">
+            <div style="position:absolute ; width:40px; height:40px; background-color:rgb(76, 0, 255);">
+            </div>
+        </div>
+    </div>
+    <!--absolute絕對定位，在原本該有的位置上獨立一層，不被上一層的padding影響-->
+<br>
+    <div style="padding: 30px;; border:5px solid red;">
+        <div style="position: relative;;padding:30px; border:5px solid red;">
+            <div style="position:absolute ;top:0px ;right:0px ;width:40px; height:40px; background-color:rgb(76, 0, 255);">
+            </div>
+        </div>
+    </div>
+    <!--如果上一層設定了相對定位，內層會根據上層作為邊界，設定自己的絕對位置-->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+*{
+    background-color: wheat;
+}
+
+p{
+    color: red;
+}
+
+h1{
+    color: white;
+    background-color: red;
+    font-size: 50px;
+}
+
+#css-h2{
+    color: white;
+    background-color: royalblue;
+    font-size: 40px;
+}
+
+id用米字號／class用點
+.food, .drink{
+    color: green;
+    background-color: plum;
+}
+
+一次套用兩個用逗號
+.background-color-purple{
+    background-color: purple;
+}
+
+ul li{
+    background-color: darkgray;
+}
+
+[type]:hover{
+    background-color: orange;
+} 
+屬性用中括號/hover滑鼠滑過有反應
+

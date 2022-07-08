@@ -1,0 +1,81 @@
+.container{
+ display:flex;
+}
+
+.container div{
+    border: 3px solid rgb(255, 166, 0);
+    width: 100px;
+    padding: 10px;
+}
+
+.box1{
+    flex:1 ;
+    order:2
+}
+
+.box2{
+    flex:1 ;
+    order:3
+}
+
+.box3{
+    flex:1 ;
+    order:1
+}
+/* flex預設顯示方式為由左至右的橫向排列
+在此如果flex設定各1 即每個div都各佔三分之一的意思
+各設定1,2,3 即1/6,2/6,3/6的意思
+依比例分配寬度(flexdirection-row)或高度(flexdirection-column)
+order改變順序 排列由小至大 如設定3,2,-1 排序為-1,2,3 */
+/* order為出現順序 */
+
+.container2{
+    display:flex;
+    flex-wrap: wrap;  /*寬度不夠自動換行*/ 
+    flex-direction: column;  /*主軸改成由上而下*/
+    height: 300px;
+    border: 3px solid gray;
+    justify-content:center;
+    align-content: center;
+   }  
+    /* 此設定為主軸由上而下，高度不夠後由左至右延伸 */
+    /* flex-direction:colum由上至下/colum-reverse由下至上/row(預設)由左至右/row-reverse由右至左 */
+.container2 div{
+    border: 3px solid rgb(255, 166, 0);
+    width: 100px;
+    padding: 10px;
+}
+
+.box4{
+    flex:1 ;
+    order:2
+}
+
+.box5{
+    flex:1 ;
+    order:3
+}
+
+.box6{
+    flex:1 ;
+    order:1
+}
+
+
+.container3{
+    display:flex;
+    flex-wrap: wrap; 
+    flex-direction: row;  
+    height: 300px;
+    border: 3px solid gray;
+    justify-content:center; 主軸
+    align-items: center; 
+   }  
+   /* justify-content:center/flex-end/flex-start／space-around／space-evenly，指的是放在主軸(EX：flex-direction: column)
+   的中間／最後／開始處／平均分配剩餘空間，不是水平置中的概念喔!*/
+   /* align為次軸位置調整，屬性直如上。單行用item-content，多行使用align-content */
+   .container3 div{
+    border: 3px solid rgb(119, 0, 255);
+    width: 100px;
+    padding: 10px;
+    }
