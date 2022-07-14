@@ -36,7 +36,7 @@ order改變順序 排列由小至大 如設定3,2,-1 排序為-1,2,3 */
     height: 300px;
     border: 3px solid gray;
     justify-content:center;
-    align-content: center;
+    align-content: centers;
    }  
     /* 此設定為主軸由上而下，高度不夠後由左至右延伸 */
     /* flex-direction:colum由上至下/colum-reverse由下至上/row(預設)由左至右/row-reverse由右至左 */
