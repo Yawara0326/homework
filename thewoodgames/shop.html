@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,64 +7,90 @@
     <title>此木創遊</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
-</head>
 
+    <style>
+        .item_buy{
+            width: 100px;
+            height: 32px;
+            line-height: 32px;
+            background-color :#8a8000;
+            color: #fff;
+            padding:5px 10px ;
+            border-radius: 14px;
+            text-align: center;
+            font-size: 15px;
+            
+        }
+
+        .item_buy:hover{
+            background-color: black;
+        }
+    </style>
+
+
+
+</head>
 <body>
     <div class="main">
-        <header><a href="index.html"><img src="/homework/thewoodgames/img/logo.png" alt="the wood games" class="logo"></a>
-        </header>
+        <header><a href="index.html"><img src="/homework/thewoodgames/img/logo.png" alt="the wood games" class="logo"></a></header>
         <nav class="nav">
-            <div class="nav1"><a href="#" id="test"><span class="ch">介紹</span> <span class="en">About</span></a></div>
+            <div class="nav1"><a href="#" id="test" ><span class="ch">介紹</span> <span class="en">About</span></a></div>
             <div class="nav2">
                 <a href="#" id="test">
                     <span class="ch">遊戲</span> <span class="en">Games</span>
                 </a>
             </div>
-            <div class="nav3"><a href="#" id="test"><span class="ch">商店</span> <span class="en">Shop</span></a></div>
+            <div class="nav3"><a href="shop.html" id="test"><span class="ch">商店</span> <span class="en">Shop</span></a></div>
+            
+            </ul>
         </nav>
-    <div class="shop" style="font-family:'Noto Sans TC' ;">
-        <p>歡迎來到此木創遊網路商店！在這裡您可以找到我們嚴選的出版品，預購期間享有優惠，敬請把握機會！本次商店為慶祝《福爾摩斯大對決》上市，優惠期間為9/16-10/6，優惠期間享免運優惠。選定您喜歡的方案，點選右側「立即購買」按鈕結帳，對結帳程序有問題可以來信詢問：dasholzspiele@gmail.com</p>
-        <div class="item">
-            <div class="left"><img src="/homework/thewoodgames/img/5.png" alt="holmes" style="width:100%;"></div>
-            <div class="mid">
-                <h1>福爾摩斯大對決 Holmes: Sherlock & Mycroft</h1>
-                <p>建議售價 690</p>
+        <div class="shop" style="font-family:'Noto Sans TC';sans-serif;">
+            <div class="intro" style="margin-top:15px ; margin-bottom:25px ; color: #585958; font-size: 15px ; letter-spacing: 1.5px; line-height: 20px;">歡迎來到此木創遊網路商店！在這裡您可以找到我們嚴選的出版品，預購期間享有優惠，敬請把握機會！本次商店為慶祝《福爾摩斯大對決》上市，優惠期間為9/16-10/6，優惠期間享免運優惠。選定您喜歡的方案，點選右側「立即購買」按鈕結帳，對結帳程序有問題可以來信詢問：dasholzspiele@gmail.com
             </div>
-            <div class="right">
-                    <h2>商品說明</h2>
-                    <p>一套方案 / 特價 $590</p>
-                    <p>1 套主遊戲 1 張預購贈品米寶貼</p>
-                    <!-- <p>五套方案 / 特價 $2600</p>
-                    <p>5 套主遊戲 5 張預購贈品米寶貼</p> -->
-                    <div>
-                        <a href="#" class="item_buy"> 立即購買</a>
-                    </div>
-                    <!-- <div><a href="#" class="item_buy"> 立即購買</a></div> -->
-            </div>
-            <div class="item">
-                <div class="left"><img src="/homework/thewoodgames/img/5.png" alt="holmes" style="width:100%;"></div>
-                <div class="mid">
-                    <h1>福爾摩斯大對決 Holmes: Sherlock & Mycroft</h1>
-                    <p>建議售價 690</p>
+            <div class="item" style="display:flex; padding: 11px;border:1px solid #827000;">
+                <div class="left" >
+                    <img src="/homework/thewoodgames/img/5.png" alt="Holmes" style="width:195px;">
+                </div>
+                <div class="mid" style="width:332px; height:176px ; margin: 5px 0 0 13px;">
+                    <div style="font-size:22px; line-height: 25px">福爾摩斯大對決<br>Holmes: Sherlock & Mycroft</div>
+                    <div style="color:#827000 ; font-size:16px;margin-top: 110px;">建議售價 690</div>
                 </div>
                 <div class="right">
-                        <div>
-                        </div><h2>商品說明</h2>
-                        <p>一套方案 / 特價 $590</p>
-                        <p>1 套主遊戲 1 張預購贈品米寶貼</p>
-                        <a href="#" class="item_buy"> 立即購買</a>
+                    <div style="width: 316px;display:inline-block ; vertical-align:top ; margin-top: 5px;"> 
+                        <div style="border-bottom:1px solid #827000 ; padding-bottom: 7px; margin-bottom:13px;font-size: 16px;">商品說明</div> 
+                        <div style="float:left;vertical-align:top;">
+                            <div style="color:#827000; font-size:17px ; margin-bottom: 13px;">一套方案 / 特價 $590</div>
+                            <div style="font-size: 14px; margin-bottom:3px ;"> 1 套主遊戲 </div>
+                            <div style="font-size:14px; margin-bottom:5px ;"> 1 張預購贈品米寶貼</div>  
                         </div>
-                        <!-- <div>
-                        <p>五套方案 / 特價 $2600</p>
-                        <p>5 套主遊戲 5 張預購贈品米寶貼</p> -->
-                        <!-- <a href="#" class="item_buy"> 立即購買</a>
-                        </div> -->
+                        <div style="float:right;vertical-align:top;">
+                            <a href="#" class="item_buy">立即購買</a>
+                        </div>
+                    </div>
+                    <div style="clear: both; margin-bottom: 10px;">
+                        <div style="float:left;vertical-align:top;">
+                            <div style="color:#827000; font-size:17px ; margin-bottom: 13px;">五套方案 / 特價 $2600</div>
+                            <div style="font-size: 14px; margin-bottom:3px ;"> 5 套主遊戲 </div>
+                            <div style="font-size:14px; margin-bottom:5px ;"> 5 張預購贈品米寶貼</div>  
+                        </div>
+                        <div style="float:right;vertical-align:top;">
+                            <a href="#" class="item_buy">立即購買</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="item">
+
+            </div>
+
+            <div class="item">
+                
+            </div>
         </div>
-    </div>
- 
-</body>
-
-</html>
-</body>
-
-</html>
