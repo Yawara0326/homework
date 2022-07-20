@@ -18,7 +18,9 @@ html {
     
 
     div.main{
-        width: 900px;
+        width: 100%;
+        max-width: 900px;
+        
         /* margin:0 auto; 如果屬性值只有兩個，第一個值為上下，第二個值為左右，對照如下*/
         margin:0 auto;
         margin-top: 30px;
@@ -189,11 +191,11 @@ html {
     .shop .item{
         border:1px solid #8a8000;
         border-bottom: none;
+        padding: 11px;
     }
 
     .shop .item:last-child{
         border:1px solid #8a8000;
-        border-right: none;
     }
 
     .shop .item .left{
@@ -205,26 +207,114 @@ html {
 
     .shop .item .mid{
         display: inline-block;
-        width: 38%;
+        width: 40%;
         vertical-align: top;
+        margin: -4px;
+        padding:0 13px ;
+        
+    }
+
+    .shop .item .mid h1{
+        margin: 0px;
+        font-size: 22px;
+        
+    }
+
+    .shop .item .mid p{
+        color: #827B00;
+        font-size: 16px;
+        margin-top:110px;
+        
     }
 
     .shop .item .right{
         display: inline-block;
-        width: 38%;
+        width: 40%;
         vertical-align: top;
+        margin: -4px;
     }
+
+    .shop .item .right h2{
+        vertical-align: top;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 13px;
+        padding-bottom: 7px;
+        border-bottom:1px solid #827B00 ;
+    }
+
+    .shop .item .right .item_left{
+        display: inline-block;
+        width: 68%;
+        margin-bottom: 10px;
+    }
+    .shop .item .right .item_right{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        margin-bottom: 10px;
+        margin-top: -5px;
+        text-align: right;
+    }
+
+    .shop .item .right .h2_title{
+        font-size: 17px;
+        margin: 0px 0px 13px;
+        color: #827B00;
+        
+    }
+
+    .shop .item .right .h2_description{
+        font-size: 14px;
+        margin:0px
+    }
+    
+    
+
+
+    /* inlineblock中間有空白 如果調整到剛好100% 就會超過界線擠到下排 mg-4px可解決 */
 
     .shop .item .item_buy{
         text-decoration: none;
         background-color: #8a8000;
         color: #fff;
         padding: 8px 12px;
-        border-radius:16px;
+        border-radius:14px;
         display: inline-block;
         margin: 5px;
+        vertical-align: top;
+        font-size: 14px;
     }
 
     .shop .item a.item_buy:hover{
         background-color: black;
+    }
+
+
+    @media (max-width:600px){
+        .shop .item{
+            flex-direction: column;
+        }
+        .shop p:first-child{
+            padding: 0px 10px;
+        }
+        .shop .item .left{       
+            width: 100%;    
+        }
+        .shop .item .mid{       
+            width: 100%;
+            padding: 0px;
+            margin: 0px;    
+        }
+        .shop .item .right{       
+            width: 100%;
+            margin: 0px;    
+        }
+        .shop .item .mid p{
+            margin-top: 0px;
+        }
+        .nav {
+            flex-direction: column;
+            height: auto;
+        }
     }
