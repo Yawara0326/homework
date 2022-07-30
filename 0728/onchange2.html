@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>選擇喜歡的明星</h2>
+    <select name="" id="dropdown" onchange="select()">
+        <option value="none">請選擇喜歡的明星</option>
+        <option value="fan">張若凡</option>
+        <option value="evy">艾薇</option>
+        <option value="huang">李佳歡</option>
+    </select>
+    <h3 id="show"></h3>
+    
+    <script lang="javascript">
+        function select(){
+            var x = document.getElementById('dropdown').value
+            document.getElementById('show').innerHTML="您選擇的是" + x
+        }
+    </script>
+
+</body>
+</html>

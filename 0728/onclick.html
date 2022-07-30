@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>onclick練習</h2>
+    <button onclick="display()">顯示資訊</button>
+    <button onclick="display2()">改顏色</button>
+    <button onclick="display3() ">隱藏資訊</button>
+    <p id="show"></p>
+
+
+    <script>
+        function display(){
+            document.getElementById('show').innerHTML='<h2>hello</h2>'
+        }
+        function display2(){
+            document.getElementById('show').innerHTML='<h2 style=color:blue;>hello</h2>'
+        }
+        function display3(){
+            document.getElementById('show').innerHTML=''
+        }
+
+
+        // 可以將javacript放進標籤中，也可以分開使用function將自定義名稱帶like onclick2
+    </script>
+</body>
+</html>

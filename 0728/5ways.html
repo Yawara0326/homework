@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>請按下按鈕來顯示訊息</h2>
+    <button value="訊息一" onclick="one()">訊息一</button>
+    <button value="訊息二" id="btn2">訊息二</button>
+    <button value="訊息三" id="btn3">訊息三</button>
+    <button value="訊息四" id="btn4">訊息四</button>
+    <button value="訊息五" id="btn5">訊息五</button>
+
+    <p id="display"></p>
+    <hr>
+
+    <script>
+        // 先建立函式再丟回物件-函式分配法
+        function one(){
+            document.getElementById('display').innerHTML="第一種方法"
+        }
+
+        // 先抓物件再連結事件跟函式-物件分配法
+        document.getElementById('btn2').addEventListener("click",function(){
+            document.getElementById('display').innerHTML="第二種方法"
+        })
+
+        // 物件分配精簡版
+        document.getElementById('btn3').addEventListener("click",()=>{
+            document.getElementById('display').innerHTML="第三種方法"
+        })
+
+
+        // 更精簡的物件分配(這個函式，功能(此例onclick)無法複寫，所以如果下方要重複使用就不用這個寫法)
+        document.getElementById('btn4').onclick =() =>{
+            document.getElementById('display').innerHTML="第四種方法"
+        }
+
+        // 變數精簡法 自訂函式名稱後的'Function' 必備
+        const btn5 = document.getElementById("btn5");
+        const show = document.getElementById("display");
+        function showFunction(){
+            show.innerHTML="第五種方法";
+        }
+
+        btn5.addEventListener("click",showFunction)
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

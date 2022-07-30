@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>practice onclick</h2>
+    <button onclick="showup()">顯示</button>
+    <button onclick="showup2()">變色</button>
+    <button onclick="showup3()">隱藏</button> 
+    <p id="show"></p>
+    <!-- <h2>practice onclick</h2>
+    <button onclick="javascrip:document.getElementById('show').innerHTML='<h2> hello </h2>'">顯示</button>
+    <button onclick="javascrip:document.getElementById('show').innerHTML='<h2 style=color:blue;> hello </h2>'">變色</button>
+    <button onclick="javascrip:document.getElementById('show').innerHTML=''">隱藏</button> -->
+   
+
+
+    <script>
+    function showup(){
+        document.getElementById('show').innerHTML='<h2>hello</h2>'
+    }    
+    function showup2(){
+        document.getElementById('show').innerHTML='<h2 style=color:blue>hello</h2>'
+    }    
+    function showup3(){
+        document.getElementById('show').innerHTML=''
+    }    
+    </script>
+
+    <!-- style內不可加引號 -->
+
+
+</body>
+</html>

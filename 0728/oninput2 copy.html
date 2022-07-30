@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    <label for="">請輸入華氏</label>
+    <input type="number" placeholder="華氏" oninput="converter(this.value)">
+    <p>
+        攝氏溫度是: <span id="output"></span>
+    </p>
+
+    <script lang="javascript">
+        function converter(degree){
+            document.getElementById('output').innerHTML=(degree-32)*5/9
+        }
+    </script>
+</body>
+</html>

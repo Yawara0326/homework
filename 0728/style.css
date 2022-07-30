@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+.engine{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+    top:30%;
+    right:10%;
+}
+
+.wheel{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+    top:50%;
+    right:10%;
+}
+
+.back{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: absolute;
+    top:30%;
+    right:30%;
+}
+
+
+#img1{
+    position: absolute;
+    left:50px;
+    top:50px;
+    display: none;
+    
+}
+#img2{
+    position: absolute;
+    left:60%;
+    top:40%;
+    display: none;
+}
+#img3{
+    position: absolute;
+    left:1200px;
+    top:60px;
+    display: none;
+}
+.img-item img{
+    width: 800px;
+    height: 800px;
+}
