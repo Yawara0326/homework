@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JS連結內部 -->
+     <!-- <script lang="javascritp">
+     alert("這是我的js視窗")
+     </script> -->
+
+    <!-- JS連結外部 -->
+     <script src="javascript" lang="javascript"></script>
+     
+     <script lang="javascript">
+        var score = prompt("請輸入分數：");
+        if(score>=90)
+        alert("GOOD");
+        
+        else if(score<90 && score>=80)
+        alert("ok");
+
+        else
+        alert("lol");
+        
+     </script>
+
+</head>
+<body>
+    <h1>js Alert</h1>
+    <h2>DOM</h2>
+    
+    <p id="hello"></p>
+    <script>
+    document.getElementById("hello").innerHTML="這個是DOM練習";
+    </script>
+    <!-- js放在要作用的html標籤後，套用在整個視窗就在head-->
+
+    <h3>變數練習</h3>
+    <p id="variable"></p>
+    <script>
+        var s1="今年是:";
+        var date=new Date();
+        var year=date.getFullYear();
+        var s2="我的年紀是:";
+        var age=year-1999;
+        
+        document.getElementById("variable").innerHTML=s1 + year +"<br>" + s2 + age;
+    </script>
+
+    <div>打分數系統</div>
+
+
+
+
+
+
+
+</body>
+</html>
